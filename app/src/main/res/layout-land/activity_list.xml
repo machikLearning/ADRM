@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/goMedicineCardPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_centerHorizontal="true"
+            android:background="#3b3f4d"
+            android:onClick="onClick"
+            android:text="의약품 안전카드"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/goListPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/menubutton"
+            android:onClick="onClick"
+            android:text="알레르기 약물 검색"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#dcf0f9">
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.5"
+            android:drawableLeft="@drawable/logoutbtn"
+            android:paddingLeft="5dp"
+            android:onClick="onClick"
+            android:background="@drawable/logoutbutton"
+            android:text="로그아웃" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/goSearchPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="5"
+            android:text="검색"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/btn_1"
+            android:background="@drawable/searchbutton"
+            android:scaleType="fitCenter"
+            android:onClick="onClick"
+             />
+
+        <Button
+            android:id="@+id/goQRCodePage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="5"
+            android:drawableTop="@drawable/btn_2"
+            android:background="@drawable/ocrbutton"
+            android:textColor="#ffffff"
+            android:text="QR코드"
+            android:scaleType="fitCenter"
+            android:onClick="onClick"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <!--<ImageView-->
+            <!--android:id="@+id/loadingImage"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_weight="5"-->
+            <!--android:background="@drawable/qrcodebutton"-->
+            <!--android:src="@drawable/btn_3"-->
+            <!--android:onClick="onClick"-->
+            <!--android:scaleType="fitCenter"-->
+        <!--/>-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:gravity="center_horizontal">
+    </LinearLayout>
+</LinearLayout>
